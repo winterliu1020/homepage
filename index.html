@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>winterliu · 个人主页</title>
+  <meta name="description" content="winterliu 的个人网站：简介、项目与联系方式。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top">winterliu</a>
+    <nav>
+      <a href="#about">关于</a>
+      <a href="#projects">项目</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">你好，我是</p>
+      <h1>winterliu</h1>
+      <p class="lead">一辈子太长了，要和有趣的人在一起！</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">看看我的项目</a>
+        <a class="btn" href="#contact">联系我</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>关于我</h2>
+      <p>我是 winterliu，来自北京邮电大学，现居北京。</p>
+      <p>我喜欢动手做东西：写过微信小程序，一步一步实现过自己的 RPC 框架，也习惯把学习过程整理成笔记。</p>
+      <ul class="tags">
+        <li>Java</li>
+        <li>Go</li>
+        <li>JavaScript</li>
+        <li>微信小程序</li>
+        <li>机器学习</li>
+      </ul>
+    </section>
+
+    <!-- 项目：复制 <article> 块即可增加项目 -->
+    <section id="projects">
+      <h2>项目</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>BiliLottery</h3>
+          <p>微信小程序「UP主的工具箱」的后端，小程序端在 BiliLotteryWeChat 仓库。</p>
+          <a href="https://github.com/winterliu1020/BiliLottery">查看代码 →</a>
+        </article>
+        <article class="card">
+          <h3>MyRpcDemo</h3>
+          <p>一步一步学习如何自己写一个 RPC 框架，使用 Java 实现。</p>
+          <a href="https://github.com/winterliu1020/MyRpcDemo">查看代码 →</a>
+        </article>
+        <article class="card">
+          <h3>学习笔记</h3>
+          <p>我在学习过程中记录的一些笔记。</p>
+          <a href="https://winterliu1020.github.io/winterliu-notes/">阅读笔记 →</a>
+        </article>
+        <article class="card">
+          <h3>表格信息提取工具</h3>
+          <p>基于模板的表格信息提取工具。</p>
+          <a href="https://github.com/winterliu1020/form_information_extraction">查看代码 →</a>
+        </article>
+        <article class="card">
+          <h3>教学代码库管理系统</h3>
+          <p>面向教学场景的代码库管理系统。</p>
+          <a href="https://github.com/winterliu1020/Code_Base_Management">查看代码 →</a>
+        </article>
+        <article class="card">
+          <h3>MachineLearning</h3>
+          <p>学习机器学习时写的一些代码。</p>
+          <a href="https://github.com/winterliu1020/MachineLearning">查看代码 →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>联系我</h2>
+      <p>欢迎通过下面的方式找到我：</p>
+      <ul class="links">
+        <li><a href="https://github.com/winterliu1020">GitHub：winterliu1020</a></li>
+        <li><a href="https://winterliu1020.github.io/">博客：winterliu1020.github.io</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> winterliu</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
